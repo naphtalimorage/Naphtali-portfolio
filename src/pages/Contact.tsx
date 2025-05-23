@@ -1,8 +1,10 @@
 import React from 'react';
+import BackButton from '../components/BackButton';
 
 const Contact: React.FC = () => {
   return (
     <div className="min-h-screen p-8 bg-gray-50">
+      <BackButton />
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-blue-800 text-center">Get In Touch</h1>
         <p className="text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
@@ -24,7 +26,7 @@ const Contact: React.FC = () => {
                   required
                 />
               </div>
-              
+
               <div className="mb-4">
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
                 <input 
@@ -35,7 +37,7 @@ const Contact: React.FC = () => {
                   required
                 />
               </div>
-              
+
               <div className="mb-4">
                 <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">Subject</label>
                 <input 
@@ -46,7 +48,7 @@ const Contact: React.FC = () => {
                   required
                 />
               </div>
-              
+
               <div className="mb-6">
                 <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
                 <textarea 
@@ -57,7 +59,7 @@ const Contact: React.FC = () => {
                   required
                 ></textarea>
               </div>
-              
+
               <button 
                 type="submit" 
                 className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
@@ -66,7 +68,7 @@ const Contact: React.FC = () => {
               </button>
             </form>
           </div>
-          
+
           {/* Contact Information */}
           <div>
             <div className="bg-white p-8 rounded-lg shadow-md mb-8">
@@ -84,7 +86,7 @@ const Contact: React.FC = () => {
                     <p className="text-sm text-gray-500 mt-1">Feel free to email me anytime!</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -97,7 +99,7 @@ const Contact: React.FC = () => {
                     <p className="text-sm text-gray-500 mt-1">Available Monday-Friday, 9AM-5PM</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -113,7 +115,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Social Media */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-semibold mb-6 text-blue-700">Connect With Me</h2>
@@ -129,7 +131,7 @@ const Contact: React.FC = () => {
                   </svg>
                   GitHub
                 </a>
-                
+
                 <a 
                   href="https://linkedin.com/in/yourprofile" 
                   target="_blank" 
@@ -141,7 +143,7 @@ const Contact: React.FC = () => {
                   </svg>
                   LinkedIn
                 </a>
-                
+
                 <a 
                   href="https://twitter.com/yourusername" 
                   target="_blank" 
@@ -153,7 +155,7 @@ const Contact: React.FC = () => {
                   </svg>
                   Twitter
                 </a>
-                
+
                 <a 
                   href="https://instagram.com/yourusername" 
                   target="_blank" 

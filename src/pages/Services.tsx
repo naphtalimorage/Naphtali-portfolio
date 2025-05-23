@@ -1,14 +1,16 @@
 import React from 'react';
+import BackButton from '../components/BackButton';
 
 const Services: React.FC = () => {
   return (
     <div className="min-h-screen p-8 bg-gray-50">
+      <BackButton />
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-blue-800 text-center">My Services</h1>
         <p className="text-xl text-gray-700 text-center mb-12">
           I offer a range of professional services to help bring your digital vision to life.
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Web Development */}
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -42,7 +44,7 @@ const Services: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* UI/UX Design */}
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -75,7 +77,7 @@ const Services: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Mobile App Development */}
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -108,7 +110,7 @@ const Services: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* API Development */}
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -141,7 +143,7 @@ const Services: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* E-commerce Solutions */}
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -174,7 +176,7 @@ const Services: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Consulting & Training */}
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -210,7 +212,7 @@ const Services: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="mt-16 text-center">
           <h2 className="text-2xl font-semibold mb-4 text-blue-800">Ready to start a project?</h2>
           <p className="text-gray-700 mb-6">

@@ -1,11 +1,13 @@
 import React from 'react';
+import BackButton from '../components/BackButton';
 
 const About: React.FC = () => {
   return (
     <div className="min-h-screen p-8 bg-gray-50">
+      <BackButton />
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-blue-800">About Me</h1>
-        
+
         <div className="bg-white p-6 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold mb-4 text-blue-700">Who I Am</h2>
           <p className="mb-4 text-gray-700">
@@ -22,7 +24,7 @@ const About: React.FC = () => {
             or sharing my knowledge through blog posts and community events.
           </p>
         </div>
-        
+
         <div className="bg-white p-6 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold mb-4 text-blue-700">Education & Certifications</h2>
           <div className="mb-4">
@@ -32,7 +34,7 @@ const About: React.FC = () => {
               Focused on software engineering, web development, and data structures & algorithms.
             </p>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-medium text-blue-600">Certifications</h3>
             <ul className="list-disc list-inside mt-2 text-gray-700">
@@ -42,10 +44,10 @@ const About: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4 text-blue-700">Professional Experience</h2>
-          
+
           <div className="mb-6">
             <h3 className="text-xl font-medium text-blue-600">Senior Frontend Developer</h3>
             <p className="text-gray-600">Company Name, 2021-Present</p>
@@ -56,7 +58,7 @@ const About: React.FC = () => {
               <li>Mentored junior developers and conducted code reviews to maintain code quality</li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-medium text-blue-600">Web Developer</h3>
             <p className="text-gray-600">Previous Company, 2019-2021</p>

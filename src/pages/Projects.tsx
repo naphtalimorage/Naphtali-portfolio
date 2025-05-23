@@ -1,4 +1,5 @@
 import React from 'react';
+import BackButton from '../components/BackButton';
 
 const Projects: React.FC = () => {
   // Sample project data
@@ -95,6 +96,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="min-h-screen p-8 bg-gray-50">
+      <BackButton />
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4 text-blue-800">My Projects</h1>

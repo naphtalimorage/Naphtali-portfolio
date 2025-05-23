@@ -1,4 +1,5 @@
 import React from 'react';
+import BackButton from '../components/BackButton';
 
 const Skills: React.FC = () => {
   // Define skill categories and their items
@@ -86,6 +87,7 @@ const Skills: React.FC = () => {
 
   return (
     <div className="min-h-screen p-8 bg-gray-50">
+      <BackButton />
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-blue-800 text-center">My Skills & Expertise</h1>
         <p className="text-xl text-gray-700 text-center mb-12">

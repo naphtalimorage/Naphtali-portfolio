@@ -1,11 +1,13 @@
 import React from 'react';
+import BackButton from '../components/BackButton';
 
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
+      <BackButton />
       <div className="max-w-4xl w-full">
         <h1 className="text-4xl font-bold mb-6">Naphtali's Portfolio</h1>
-        
+
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="mb-4">
@@ -16,7 +18,7 @@ const Home: React.FC = () => {
             Feel free to explore my work and get in touch if you'd like to collaborate!
           </p>
         </section>
-        
+
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4">My Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -28,7 +30,7 @@ const Home: React.FC = () => {
             <div className="p-3 border rounded">Node.js</div>
           </div>
         </section>
-        
+
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4">Featured Projects</h2>
           <div className="space-y-6">
@@ -40,7 +42,7 @@ const Home: React.FC = () => {
                 <button className="px-3 py-1 border border-blue-500 text-blue-500 rounded">GitHub</button>
               </div>
             </div>
-            
+
             <div className="p-4 border rounded">
               <h3 className="text-xl font-medium mb-2">Project 2</h3>
               <p className="mb-2">Description of your second project goes here.</p>
@@ -51,7 +53,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </section>
-        
+
         <section>
           <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
           <p className="mb-4">
