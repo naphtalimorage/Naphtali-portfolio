@@ -1,0 +1,1 @@
+A modern, responsive portfolio website built with React 19, TypeScript, and Tailwind CSS. Features a clean UI, component-based architecture, and sections for showcasing projects, skills, and professional experience. Easy to customize and deploy.
