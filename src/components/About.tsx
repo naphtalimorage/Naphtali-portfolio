@@ -7,7 +7,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 
 const About = () => {
     return (
-        <section id="about">
+        <section id="about" className="py-5 bg-gray-50">
             <div className="max-w-7xl mx-auto">
                 <AnimatedSection animation="slideUp">
                     <div className="text-center mb-12 sm:mb-16">

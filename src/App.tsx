@@ -3,6 +3,8 @@
 import Header from "@/components/Header.tsx";
 import Hero from "@/components/Hero.tsx";
 import About from "@/components/About.tsx";
+import Skills from "@/pages/Skills.tsx";
+import Services from "@/pages/Services.tsx";
 
 const App = () => {
     return (
@@ -10,6 +12,8 @@ const App = () => {
             <Header />
             <Hero />
             <About/>
+            <Skills/>
+            <Services/>
         </div>
     );
 };

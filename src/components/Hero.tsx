@@ -12,8 +12,8 @@ import AnimatedSection from "@/components/AnimatedSection.tsx";
 
 const Hero = () => {
     return(
-        <section id="home" className="relative min-h-screen px-48 py-24">
-            <div className="flex flex-row  space-x-20">
+        <section id="home" className="relative min-h-screen px-48 py-24 bg-gray-50">
+            <div className="flex flex-row  space-x-20 ">
                 <div className="flex flex-col space-y-7 py-10">
                     <AnimatedSection animation="fadeIn" delay={200}>
                         <a href="mailto:your-email@example.com" className="">
