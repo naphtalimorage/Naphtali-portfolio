@@ -1,4 +1,5 @@
 import { RiVerifiedBadgeLine } from "react-icons/ri";
+import AnimatedSection from "@/components/AnimatedSection.tsx";
 // import BackButton from '../components/BackButton';
 
 const Skills: React.FC = () => {
@@ -66,32 +67,36 @@ const Skills: React.FC = () => {
 
   return (
     <section id={ "skills"}>
-      <div className="min-h-screen p-8 bg-gray-50 ">
+      <div className="min-h-screen py-10 bg-gray-50 ">
         <div className="max-w-5xl mx-auto  items-center justify-center ">
-          <h1 className=" text-center text-3xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb- sm:mb-2">
-            Skills & Expertise
-          </h1>
-          <p className="text-sm text-gray-700 text-center mb-12">
-            My Technical Level
-          </p>
+          <AnimatedSection animation={"slideUp"} delay={100}>
+            <h1 className=" text-center text-3xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb- sm:mb-2">
+              Skills & Expertise
+            </h1>
+            <p className="text-sm text-gray-700 text-center mb-12">
+              My Technical Level
+            </p>
+          </AnimatedSection>
 
           {/* Skills Categories */}
-          <div className="flex gap-10 mb-16 justify-center items-center ">
-            {skillCategories.map((category) => (
-                <div key={category.name} className="bg-white p-6 rounded-2xl shadow-md w-full">
-                  <div className="flex flex-col items-center mb-6">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                      {category.icon}
+          <AnimatedSection animation="slideUp" delay={200}>
+            <div className="flex gap-10 mb-16 justify-center items-center ">
+              {skillCategories.map((category) => (
+                  <div key={category.name} className="bg-white p-6 rounded-2xl shadow-md w-full">
+                    <div className="flex flex-col items-center mb-6">
+                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                        {category.icon}
+                      </div>
+                      <h2 className="text-lg font-semibold ">{category.name}</h2>
                     </div>
-                    <h2 className="text-lg font-semibold ">{category.name}</h2>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 justify-between">
+                      {category.skills.map(skill =>
+                          renderSkillBar(skill.icon,skill.name, skill.level))}
+                    </div>
                   </div>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 justify-between">
-                    {category.skills.map(skill =>
-                        renderSkillBar(skill.icon,skill.name, skill.level))}
-                  </div>
-                </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </AnimatedSection>
         </div>
       </div>
 

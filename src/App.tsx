@@ -5,6 +5,7 @@ import Hero from "@/components/Hero.tsx";
 import About from "@/components/About.tsx";
 import Skills from "@/pages/Skills.tsx";
 import Services from "@/pages/Services.tsx";
+import Projects from "@/pages/Projects.tsx";
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
             <About/>
             <Skills/>
             <Services/>
+            <Projects/>
         </div>
     );
 };
