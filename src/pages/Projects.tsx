@@ -94,7 +94,7 @@ const Projects: React.FC = () => {
   // ];
 
   return (
-    <section id={"projects"} className="bg-gray-50 py-32">
+    <section id={"projects"} className="bg-gray-50 py-10 px-44">
       <div className="">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection animation="slideUp" delay={100}>

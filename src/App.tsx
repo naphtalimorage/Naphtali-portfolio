@@ -6,6 +6,8 @@ import About from "@/components/About.tsx";
 import Skills from "@/pages/Skills.tsx";
 import Services from "@/pages/Services.tsx";
 import Projects from "@/pages/Projects.tsx";
+import Contact from "@/pages/Contact.tsx";
+import Footer from "@/pages/Footer.tsx";
 
 const App = () => {
     return (
@@ -16,6 +18,8 @@ const App = () => {
             <Skills/>
             <Services/>
             <Projects/>
+            <Contact/>
+            <Footer/>
         </div>
     );
 };

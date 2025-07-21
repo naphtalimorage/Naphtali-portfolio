@@ -12,7 +12,7 @@ const Header = () => {
         { id: 'about', label: 'About' },
         { id: 'skills', label: 'Skills' },
         { id: 'services', label: 'Service' },
-        { id: 'Projects', label: 'Projects' },
+        { id: 'projects', label: 'Projects' },
         { id: 'contact', label: 'Contact' }
     ], []);
 

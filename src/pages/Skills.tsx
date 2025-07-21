@@ -66,8 +66,8 @@ const Skills: React.FC = () => {
   );
 
   return (
-    <section id={ "skills"}>
-      <div className="min-h-screen py-10 bg-gray-50 ">
+    <section id={ "skills"} className="py-10 bg-gray-50 ">
+      <div className="   ">
         <div className="max-w-5xl mx-auto  items-center justify-center ">
           <AnimatedSection animation={"slideUp"} delay={100}>
             <h1 className=" text-center text-3xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb- sm:mb-2">
@@ -80,7 +80,7 @@ const Skills: React.FC = () => {
 
           {/* Skills Categories */}
           <AnimatedSection animation="slideUp" delay={200}>
-            <div className="flex gap-10 mb-16 justify-center items-center ">
+            <div className="flex gap-10  justify-center items-center ">
               {skillCategories.map((category) => (
                   <div key={category.name} className="bg-white p-6 rounded-2xl shadow-md w-full">
                     <div className="flex flex-col items-center mb-6">
