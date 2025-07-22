@@ -1,4 +1,4 @@
-// import BackButton from "@/components/BackButton.tsx";
+import Logo from "../assets/naphtali.jpeg";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
@@ -15,60 +15,67 @@ const Hero = () => {
         <section id="home" className="relative min-h-screen px-48 py-24 bg-gray-50">
             <div className="flex flex-row  space-x-20 ">
                 <div className="flex flex-col space-y-7 py-10">
-                    <AnimatedSection animation="fadeIn" delay={200}>
-                        <a href="mailto:your-email@example.com" className="">
+                    <AnimatedSection animation="slideLeft" delay={200}>
+                        <a href="https://twitter.com/naphtalimorage" className="">
                             <FaSquareXTwitter size={30}/>
                         </a>
                     </AnimatedSection>
-                    <AnimatedSection animation="fadeIn" delay={400}>
-                        <a href="https://linkedin.com/in/yourprofile" className="">
+                    <AnimatedSection animation="slideLeft" delay={400}>
+                        <a href="https://www.linkedin.com/in/naphtalimorage/" className="">
                             <FaLinkedin size={30}/>
                         </a>
                     </AnimatedSection>
-                    <AnimatedSection animation="fadeIn" delay={600}>
-                        <a href="https://github.com/yourusername" className="">
+                    <AnimatedSection animation="slideLeft" delay={600}>
+                        <a href="https://instagram.com/moragenaphtali" className="">
                             <FaInstagram size={30}/>
                         </a>
                     </AnimatedSection>
-                    <AnimatedSection animation="fadeIn" delay={800}>
-                        <a href="https://github.com/yourusername" className="">
+                    <AnimatedSection animation="slideLeft" delay={800}>
+                        <a
+                            href="https://wa.me/254716220216"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className=""
+                        >
                             <FaWhatsapp size={30}/>
                         </a>
                     </AnimatedSection>
-                    <AnimatedSection animation="fadeIn" delay={1000}>
-                        <a href="https://github.com/yourusername" className="">
+                    <AnimatedSection animation="slideLeft" delay={1000}>
+                        <a href="https://github.com/naphtalimorage" className="">
                             <FaGithub size={30}/>
                         </a>
                     </AnimatedSection>
                 </div>
-                <div className="flex flex-col">
-                    <AnimatedSection animation="fadeIn" delay={200}>
-                        <div className=" space-y-4">
-                            <h1 className="text-5xl font-bold ">Naphtali Morage <br/> Wanjiru</h1>
-                            <div className="flex flex-row space-x-4 items-center">
-                                <hr className="w-24"></hr>
-                                <p className="text-lg">Web Developer</p>
+                    <div className="flex flex-col   ">
+                        <AnimatedSection animation="fadeIn" delay={200}>
+                            <div className=" space-y-4">
+                                <h1 className="text-4xl font-bold ">Naphtali Morage <br/> Wanjiru <span className="w-10 h-10">👋</span></h1>
+                                <div className="flex flex-row space-x-4 items-center">
+                                    <hr className="w-24"></hr>
+                                    <p className="text-lg">Web Developer</p>
+                                </div>
+                                <p className="text-gray-600 text-lg">
+                                    I am a passionate web developer based in<br/> Nairobi,Kenya
+                                    with expertise in modern<br/> web technologies.
+                                </p>
                             </div>
-                            <p className="text-gray-600 text-lg">
-                                I am a passionate web developer based in Nairobi,Kenya <br/>
-                                with expertise in modern web technologies.
-                                This <br/>portfolio showcases my projects and skills.
-                            </p>
-                        </div>
-                    </AnimatedSection>
-                    <AnimatedSection animation="fadeIn" delay={400}>
-                        <div className="pt-20 flex flex-col space-y-4">
-                            <Button className="bg-gray-900 text-white hover:bg-black transition-colors duration-300 px-6 py-6 rounded-lg w-40">
-                                Say Hello
-                                <LiaTelegram  className="ml-1"/>
-                            </Button>
-                            <div className="flex flex-row items-center space-x-4">
-                                <div className="mouse-scroll"></div>
-                                <p>Scroll Down</p>
-                                <FaArrowDown size={20}/>
+                        </AnimatedSection>
+                        <AnimatedSection animation="fadeIn" delay={400}>
+                            <div className="pt-14 flex flex-col space-y-4">
+                                <Button className="bg-gray-900 text-white hover:bg-black transition-colors duration-300 px-6 py-6 rounded-lg w-40">
+                                    Say Hello
+                                    <LiaTelegram  className="ml-1"/>
+                                </Button>
+                                <div className="flex flex-row items-center space-x-4">
+                                    <div className="mouse-scroll"></div>
+                                    <p>Scroll Down</p>
+                                    <FaArrowDown size={20}/>
+                                </div>
                             </div>
-                        </div>
-                    </AnimatedSection>
+                        </AnimatedSection>
+                    </div>
+                <div className=" ">
+                    <img src={Logo} alt={"Naphtali's image"} className="w-96 h-96 object-cover rounded-full "/>
                 </div>
             </div>
         </section>

@@ -1,5 +1,5 @@
-// import {  Menu, X } from 'lucide-react';
 import {useMemo, useState, useEffect} from "react";
+import Logo from "../assets/naphtali.jpeg";
 
 const Header = () => {
     const [activeSection, setActiveSection] = useState('home');
@@ -52,26 +52,20 @@ const Header = () => {
         <header className="bg-white shadow-lg sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-44">
                 <div className="flex items-center justify-between h-16 lg:h-20">
-                    <div className="flex items-center space-x-1">
-                        {/*<img src={Logo} alt="Talek Bush Camp Logo"  className="h-10 w-10 sm:h-14 sm:w-14 "/>*/}
-                        <div>
-                            <h1 className="text-lg sm:text-sm font-bold text-gray-900">Talek Bush Camp</h1>
-                            <p className="text-xs sm:text-xm text-gray-600">Masai Mara, Kenya</p>
-                        </div>
-                    </div>
+                    <img src={Logo} alt="Talek Bush Camp Logo"  className="h-10 w-10 sm:h-14 sm:w-14 object-cover rounded-full"/>
                     <nav className="hidden lg:flex space-x-8">
                         {navigationItems.map(item => (
                             <button
                             key={item.id}
                             className={`relative  font-normal text-sm transition-all duration-300 ${
                                 isActive(item.id)
-                                    ? 'text-amber-600'
-                                    : 'text-gray-700 hover:text-amber-600'
+                                    ? 'text-gray-950'
+                                    : 'text-gray-700 hover:text-gray-950 hover:cursor-pointer'
                             }`}
                             >
                                 {item.label}
                                 {isActive(item.id) && (
-                                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-amber-600 rounded-full transition-all duration-300"></div>
+                                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gray-900 rounded-full transition-all duration-300"></div>
                                 )}
                             </button>
                         ))}

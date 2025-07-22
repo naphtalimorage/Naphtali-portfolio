@@ -1,11 +1,12 @@
 // import { MapPin, Users, Heart, Award } from 'lucide-react';
-import Bushcamp8 from "../assets/bushcamp8.jpg"
+import Naph from "../assets/naphtali2.jpeg"
 import AnimatedSection from './AnimatedSection';
 import {MapPin} from "lucide-react";
 import {Button} from "@/components/ui/button.tsx";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 const About = () => {
+
     return (
         <section id="about" className="py-5 bg-gray-50">
             <div className="max-w-7xl mx-auto">
@@ -23,7 +24,7 @@ const About = () => {
                 <div className="grid lg:grid-cols-2 gap-8 sm:gap-32  mb-12 sm:mb-16 px-48">
                     <AnimatedSection animation="slideLeft" delay={200}>
                         <img
-                            src={Bushcamp8}
+                            src={Naph}
                             alt="About Me"
                             className="rounded-2xl shadow-lg max-w-[350px] h-64 sm:h-80 lg:h-full object-cover mb-8"
                         />
