@@ -35,34 +35,39 @@ const Footer = () => {
                     </div>
                 </AnimatedSection>
                 <div className="flex justify-center items-center text-black space-x-7 mb-10 ">
-                    <AnimatedSection animation="slideUp" delay={200}>
-                        <a href="mailto:your-email@example.com" className="">
+                    <AnimatedSection animation="slideLeft" delay={200}>
+                        <a href="https://twitter.com/naphtalimorage" className="">
                             <FaSquareXTwitter size={30}/>
                         </a>
                     </AnimatedSection>
-                    <AnimatedSection animation="slideUp" delay={400}>
-                        <a href="https://linkedin.com/in/yourprofile" className="">
+                    <AnimatedSection animation="slideLeft" delay={400}>
+                        <a href="https://www.linkedin.com/in/naphtalimorage/" className="">
                             <FaLinkedin size={30}/>
                         </a>
                     </AnimatedSection>
-                    <AnimatedSection animation="fadeIn" delay={600}>
-                        <a href="https://github.com/yourusername" className="">
+                    <AnimatedSection animation="slideLeft" delay={600}>
+                        <a href="https://instagram.com/moragenaphtali" className="">
                             <FaInstagram size={30}/>
                         </a>
                     </AnimatedSection>
-                    <AnimatedSection animation="slideUp" delay={800}>
-                        <a href="https://github.com/yourusername" className="">
+                    <AnimatedSection animation="slideLeft" delay={800}>
+                        <a
+                            href="https://wa.me/254716220216"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className=""
+                        >
                             <FaWhatsapp size={30}/>
                         </a>
                     </AnimatedSection>
-                    <AnimatedSection animation="slideUp" delay={1000}>
-                        <a href="https://github.com/yourusername" className="">
+                    <AnimatedSection animation="slideLeft" delay={1000}>
+                        <a href="https://github.com/naphtalimorage" className="">
                             <FaGithub size={30}/>
                         </a>
                     </AnimatedSection>
                 </div>
                 <p className="text-sm text-black mb-5">
-                    &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
+                    &copy; {new Date().getFullYear()} Naphtali Morage. All rights reserved.
                 </p>
             </div>
         </footer>
