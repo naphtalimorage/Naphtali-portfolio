@@ -55,7 +55,7 @@ const Skills: React.FC = () => {
   ];
 
   // Function to render skill bar
-  const renderSkillBar = (name: string, icon: React.ReactNode, level: string ) => (
+  const renderSkillBar = (icon: React.ReactNode, name: string, level: string ) => (
     <div key={name} className="flex flex-col mb-1">
       <div className="flex flex-row items-center gap-3 ">
         <span className="text-base font-medium text-gray-700">{name}</span>
